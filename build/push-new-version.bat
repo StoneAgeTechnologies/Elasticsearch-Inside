@@ -1,4 +1,4 @@
 @echo off
-del *.nupkg
+del ..\source\ElasticsearchInside\bin\Release\*.nupkg
 dotnet pack ..\source\ElasticsearchInside\ElasticsearchInside.csproj -c Release
-tools\nuget push *.nupkg -source https://www.nuget.org -Timeout 999999
+tools\nuget push ..\source\ElasticsearchInside\bin\Release\*.nupkg -source https://www.nuget.org -Timeout 999999
